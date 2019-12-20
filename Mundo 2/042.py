@@ -7,7 +7,7 @@ segundoSegmento = float(input("Segundo segmento: "))
 terceiroSegmento = float(input("Terceiro segmento: "))
 
 if primeiroSegmento < segundoSegmento + terceiroSegmento and segundoSegmento < primeiroSegmento + terceiroSegmento and terceiroSegmento < primeiroSegmento + segundoSegmento:
-    print("Os segmentos acima PODEM FORMAR triângulo")
+    print("Os segmentos acima PODEM FORMAR triângulo", end=' ')
     if (primeiroSegmento == segundoSegmento and primeiroSegmento == terceiroSegmento and segundoSegmento == terceiroSegmento):
         print("EQUILÁTERO")
     elif ((primeiroSegmento == segundoSegmento and primeiroSegmento != terceiroSegmento) or (primeiroSegmento == terceiroSegmento and primeiroSegmento != segundoSegmento) or (segundoSegmento == terceiroSegmento and segundoSegmento != primeiroSegmento)):
